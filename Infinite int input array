@@ -1,0 +1,15 @@
+arr = []
+while True:
+
+    num = input("Enter a number,\n"
+                "Enter the word 'done' to stop: ")
+    if num == "done":
+        break
+    try:
+        val = int(num)
+        arr.append(val)
+
+    except ValueError:
+        print("Invalid input")
+
+print (arr)
